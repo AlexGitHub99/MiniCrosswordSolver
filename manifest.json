@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Crossword",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+      "default_popup": "options.html",
+      "default_icon": "images/crossword.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["third-party/jquery-3.7.1.min.js", "script.js"],
+            "matches": [
+                "https://www.nytimes.com/crosswords/game/mini"
+            ]
+        }
+    ]
+  }
